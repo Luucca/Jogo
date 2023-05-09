@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+
+    border: solid 2px rgb(0, 0, 0);
+    background-image: url(/Jogo/images/fundo.png);
+    background-size: 1450px;
+    width: 100%;
+    max-width: 90%;
+    margin-left: 5%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+header{
+    border: solid 2px  white;
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+    margin-left: 5%;
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 5px;
+    
+}
+.puppy{
+    width: 100px;
+    transform:  scaleX(-1);
+    position: absolute;
+    bottom: 0px;
+    right:-100px;
+    animation: run 3.5s infinite linear;
+    
+}
+@keyframes run{
+    0%{
+        right:-100px;
+    }
+    100%{
+       right:100%;
+    }
+}
+.bear{
+    width:120px;
+    position: absolute;
+    bottom: 0px;
+    left:0;
+    
+}
+.jump{
+
+     animation: jump 500ms ease-out ;
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0px;
+    }
+    45%{
+        bottom: 150px;
+    }
+    50%{
+        bottom:150px;
+    }
+    0%{
+        bottom:0px;
+    }
+}
+
+.nuvens{
+    position: absolute;
+    top: 230px;
+    left:0;
+    mix-blend-mode: multiply;
+    animation: rigt 9s infinite linear;
+    
+}
+.nuvenm{
+    position: absolute;
+    top: 100px;
+    right:200px;
+    mix-blend-mode: multiply;
+    animation: lef 15s infinite linear;
+}
+@keyframes rigt{
+    0%{
+        top: 230px;
+        left: 100%;
+       
+    }
+    100%{
+        left: -190px;
+    }
+}
+@keyframes lef{
+    0%{
+        top: 100px;
+        right: -200px;
+       
+    }
+    100%{
+        right: 100%;
+    }
+}
