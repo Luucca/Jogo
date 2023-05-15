@@ -16,9 +16,9 @@ main{
     overflow: hidden;
 }
 header{
-    border: solid 2px  white;
+    border: solid 2px  rgb(3, 3, 3);
     border-radius: 10px;
-    color:rgb(255, 255, 255);
+    color:rgb(10, 9, 9);
     margin-left: 5%;
     width: 100%;
     max-width: 90%;
@@ -32,12 +32,12 @@ header{
     width: 100px;
     transform:  scaleX(-1);
     position: absolute;
-    bottom: 0px;
+    bottom: -5px;
     right:-100px;
-    animation: run 3.5s infinite linear;
+    animation: Puppy 3.5s infinite linear;
     
 }
-@keyframes run{
+@keyframes Puppy{
     0%{
         right:-100px;
     }
@@ -48,9 +48,8 @@ header{
 .bear{
     width:120px;
     position: absolute;
-    bottom: 0px;
+    bottom: -10px;
     left:0;
-    
 }
 .jump{
 
@@ -59,7 +58,7 @@ header{
 
 @keyframes jump{
     0%{
-        bottom: 0px;
+        bottom: -10px;
     }
     45%{
         bottom: 150px;
@@ -68,10 +67,11 @@ header{
         bottom:150px;
     }
     0%{
-        bottom:0px;
+        bottom:-10px;
     }
 }
-
+/*---------------------------
+*/
 .nuvens{
     position: absolute;
     top: 230px;
